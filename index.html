@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <title>Calculator</title>
+    <style>
+        #cal{
+            background-color:antiquewhite;
+            width: 500px;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 10%;
+            padding: 50px;
+            
+        }
+        h1{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(109, 71, 21);
+        }
+        input{
+            width: 100%;
+            font-size: 20px;
+            padding: 8px;
+        }
+        button{
+            background-color: white;
+            color: rgb(109, 71, 21);
+            margin-left: 36%;
+            margin-top: 20px;
+            font-size: 17px;
+            border: 1px solid rgb(109, 71, 21);
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #Result{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="cal">
+        <h1>Average Calculator</h1>
+        <input type="text" id="numbers" placeholder="Enter the numbers separated by commas">
+        <br>
+        <button onclick="CalculateAverage()">Calculate Average</button>
+        <p id="Result">result is here!</p>
+    </div>
+</body>
+</html>
